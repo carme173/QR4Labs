@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adduser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.adduser.AddUserFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/user_firstname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Nome"
+            app:layout_constraintStart_toStartOf="@id/user_firstname"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/user_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/user_firstname_tv"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/user_lastname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Cognome"
+            app:layout_constraintStart_toStartOf="@id/user_lastname"
+            app:layout_constraintTop_toBottomOf="@id/user_firstname"/>
+
+        <EditText
+            android:id="@+id/user_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/user_lastname_tv"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/user_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="e-mail"
+            app:layout_constraintStart_toStartOf="@id/user_email"
+            app:layout_constraintTop_toBottomOf="@id/user_lastname"/>
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_email_tv"/>
+
+        <TextView
+            android:id="@+id/user_role_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Ruolo"
+            app:layout_constraintStart_toStartOf="@id/user_role"
+            app:layout_constraintTop_toBottomOf="@id/user_email"/>
+
+        <RadioGroup
+            android:id="@+id/user_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_role_tv">
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Studente"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Membro"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Responsabile"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <android.support.constraint.Group
+            android:id="@+id/manager_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="user_password_tv,user_password,showPassword" />
+
+        <TextView
+            android:id="@+id/user_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Password"
+            app:layout_constraintStart_toStartOf="@id/user_password"
+            app:layout_constraintTop_toBottomOf="@id/user_role" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/user_password_tv"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!--    <EditText
+                android:id="@+id/user_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                app:layout_constraintTop_toBottomOf="@id/user_password1"
+                app:layout_constraintStart_toStartOf="parent"/>-->
+
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Mostra password"
+            app:layout_constraintTop_toBottomOf="@id/user_password"
+            app:layout_constraintStart_toStartOf="@id/user_password"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/change_lab"
+        android:title="Cambia laboratorio"
+        android:icon="@drawable/ic_swap_vertical_circle_white_24dp"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/scan_qr"
+        android:title="Scan QR"
+        android:icon="@drawable/ic_photo_camera_white_24dp"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/login"
+        android:title="Accedi"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/logout"
+        android:title="Esci"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

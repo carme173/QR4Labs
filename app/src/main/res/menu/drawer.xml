@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+      <item
+         android:id="@+id/alerts"
+         android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+         android:title="Avvisi" />
+
+      <item
+         android:id="@+id/users"
+         android:icon="@drawable/ic_account_circle_black_24dp"
+         android:title="Utenti" />
+
+      <item
+         android:id="@+id/timetables"
+         android:icon="@drawable/ic_access_time_white_24dp"
+         android:title="Orari" />
+			
+      <item
+         android:id="@+id/projects"
+         android:icon="@drawable/ic_folder_white_24dp"
+         android:title="Progetti" />
+			
+       <item
+         android:id="@+id/info"
+         android:icon="@drawable/ic_info_black_24dp"
+         android:title="Sito Web" />
+    </group>
+</menu>

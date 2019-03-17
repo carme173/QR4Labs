@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AddAlertActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/alert_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Titolo"
+            app:layout_constraintStart_toStartOf="@id/alert_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/alert_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:focusedByDefault="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alert_title_tv" />
+
+        <TextView
+            android:id="@+id/alert_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Testo"
+            app:layout_constraintStart_toStartOf="@id/alert_text"
+            app:layout_constraintTop_toBottomOf="@+id/alert_title" />
+
+        <EditText
+            android:id="@+id/alert_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:minLines="5"
+            android:maxLines="7"
+            android:lines="5"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alert_text_tv" />
+
+        <!-- Inizio date -->
+
+        <TextView
+            android:id="@+id/date_from_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Dal"
+            app:layout_constraintStart_toStartOf="@id/date_from"
+            app:layout_constraintTop_toBottomOf="@+id/alert_text" />
+
+        <EditText
+            android:id="@+id/date_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="8dp"
+            android:inputType="date"
+            android:onClick="showDatePickerDialog"
+            android:clickable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            app:layout_constraintEnd_toStartOf="@id/date_to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_from_tv" />
+
+        <TextView
+            android:id="@+id/date_to_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Al"
+            app:layout_constraintStart_toStartOf="@id/date_to"
+            app:layout_constraintTop_toBottomOf="@+id/alert_text" />
+
+        <EditText
+            android:id="@+id/date_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="date"
+            android:clickable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            app:layout_constraintStart_toEndOf="@id/date_from"
+            app:layout_constraintTop_toBottomOf="@+id/date_to_tv"
+            app:layout_constraintEnd_toStartOf="@id/ib_calendar"
+            android:onClick="showDatePickerDialog"/>
+
+        <ImageView
+            android:id="@+id/ib_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_date_range_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/date_to"
+            app:layout_constraintTop_toBottomOf="@id/date_to_tv"
+            app:layout_constraintBottom_toBottomOf="@id/date_to"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

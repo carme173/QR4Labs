@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="role_array">
+        <item>Studente</item>
+        <item>Membro</item>
+        <item>Responsabile</item>
+    </string-array>
+
+    <string-array name="update_delete">
+        <item>Modifica</item>
+        <item>Elimina</item>
+    </string-array>
+</resources>

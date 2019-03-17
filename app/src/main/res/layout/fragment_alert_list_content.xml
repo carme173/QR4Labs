@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Titolo Avviso"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        app:layout_constraintEnd_toEndOf="@id/expired"
+        app:layout_constraintStart_toEndOf="@id/alert_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/author_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/author"
+        app:layout_constraintEnd_toStartOf="@id/author"
+        app:layout_constraintTop_toTopOf="@id/author"
+        app:layout_constraintStart_toEndOf="@id/alert_img"
+        app:srcCompat="@drawable/ic_account_circle_grey_24dp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="autore"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintStart_toEndOf="@id/author_img"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scaduto"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/date_to"/>
+
+    <ImageView
+        android:id="@+id/date_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/date_to"
+        app:layout_constraintEnd_toStartOf="@id/date_to"
+        app:layout_constraintTop_toTopOf="@id/date_to"
+        app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+    <TextView
+        android:id="@+id/date_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00/00/0000"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/alert_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

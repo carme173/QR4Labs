@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lunedì"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="?android:attr/textAppearanceListItem"/>
+
+    <TextView
+        android:id="@+id/h0910"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09 - 10"
+        app:layout_constraintTop_toBottomOf="@id/day"/>
+
+    <TextView
+        android:id="@+id/h0910_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/day"
+        app:layout_constraintStart_toEndOf="@id/h0910"/>
+
+    <TextView
+        android:id="@+id/h1011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 - 11"
+        app:layout_constraintTop_toBottomOf="@id/h0910"/>
+
+    <TextView
+        android:id="@+id/h1011_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h0910"
+        app:layout_constraintStart_toEndOf="@id/h1011"/>
+
+    <TextView
+        android:id="@+id/h1112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 - 12"
+        app:layout_constraintTop_toBottomOf="@id/h1011"/>
+
+    <TextView
+        android:id="@+id/h1112_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1011"
+        app:layout_constraintStart_toEndOf="@id/h1112"/>
+
+    <TextView
+        android:id="@+id/h1213"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 - 13"
+        app:layout_constraintTop_toBottomOf="@id/h1112"/>
+
+    <TextView
+        android:id="@+id/h1213_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1112"
+        app:layout_constraintStart_toEndOf="@id/h1213"/>
+
+    <TextView
+        android:id="@+id/h1314"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13 - 14"
+        app:layout_constraintTop_toBottomOf="@id/h1213"/>
+
+    <TextView
+        android:id="@+id/h1314_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1213"
+        app:layout_constraintStart_toEndOf="@id/h1314"/>
+
+    <TextView
+        android:id="@+id/h1415"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 - 15"
+        app:layout_constraintTop_toBottomOf="@id/h1314"/>
+
+    <TextView
+        android:id="@+id/h1415_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1314"
+        app:layout_constraintStart_toEndOf="@id/h1415"/>
+
+    <TextView
+        android:id="@+id/h1516"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 - 16"
+        app:layout_constraintTop_toBottomOf="@id/h1415"/>
+
+    <TextView
+        android:id="@+id/h1516_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1415"
+        app:layout_constraintStart_toEndOf="@id/h1516"/>
+
+    <TextView
+        android:id="@+id/h1617"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16 - 17"
+        app:layout_constraintTop_toBottomOf="@id/h1516"/>
+
+    <TextView
+        android:id="@+id/h1617_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1516"
+        app:layout_constraintStart_toEndOf="@id/h1617"/>
+
+    <TextView
+        android:id="@+id/h1718"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17 - 18"
+        app:layout_constraintTop_toBottomOf="@id/h1617"/>
+
+    <TextView
+        android:id="@+id/h1718_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="BD"
+        android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+        app:layout_constraintTop_toBottomOf="@id/h1617"
+        app:layout_constraintStart_toEndOf="@id/h1718"/>
+
+</android.support.constraint.ConstraintLayout>
